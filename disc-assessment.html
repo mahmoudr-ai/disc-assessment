@@ -13,74 +13,72 @@
   .subtitle { font-size: 14px; color: #666; line-height: 1.65; margin-bottom: 1.25rem; }
   .jp-sub { font-size: 12px; color: #999; margin-top: 3px; line-height: 1.5; }
   label { font-size: 14px; font-weight: 500; display: block; margin-bottom: 4px; }
-  input[type="text"], textarea { width: 100%; padding: 10px 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; background: #fff; color: #1a1a1a; font-family: inherit; }
-  input[type="text"]:focus, textarea:focus { outline: none; border-color: #378ADD; box-shadow: 0 0 0 3px rgba(55,138,221,0.12); }
+  input[type="text"] { width: 100%; padding: 10px 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; background: #fff; color: #1a1a1a; font-family: inherit; }
+  input[type="text"]:focus { outline: none; border-color: #C0392B; box-shadow: 0 0 0 3px rgba(192,57,43,0.1); }
   .lang-toggle { display: flex; gap: 8px; margin-bottom: 1.25rem; }
-  .lang-btn { padding: 6px 16px; border: 1px solid #ddd; border-radius: 8px; background: transparent; color: #555; cursor: pointer; font-size: 13px; font-family: inherit; transition: all 0.15s; }
+  .lang-btn { padding: 6px 16px; border: 1px solid #ddd; border-radius: 8px; background: transparent; color: #555; cursor: pointer; font-size: 13px; font-family: inherit; }
   .lang-btn.active { background: #f0f0ee; border-color: #aaa; font-weight: 500; color: #1a1a1a; }
   .section-tag { display: inline-block; font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 20px; margin-bottom: 10px; }
-  .tag-situational { background: #E6F1FB; color: #185FA5; }
-  .tag-trait { background: #EAF3DE; color: #3B6D11; }
+  .tag-situational { background: #FFF0EE; color: #9B1C1C; }
+  .tag-trait { background: #EAFAF1; color: #145A32; }
   .progress-wrap { margin-bottom: 1.25rem; }
   .progress-top { display: flex; justify-content: space-between; font-size: 12px; color: #999; margin-bottom: 5px; }
   .progress-bar { height: 4px; background: #e8e8e6; border-radius: 2px; }
-  .progress-fill { height: 100%; background: #378ADD; border-radius: 2px; transition: width 0.4s ease; }
+  .progress-fill { height: 100%; background: #C0392B; border-radius: 2px; transition: width 0.4s ease; }
   .q-text { font-size: 16px; font-weight: 500; line-height: 1.55; margin-bottom: 4px; }
   .q-jp { font-size: 13px; color: #999; line-height: 1.5; margin-bottom: 14px; }
   .options { display: grid; gap: 8px; }
   .opt-btn { padding: 12px 14px; border: 1px solid #ddd; border-radius: 8px; background: #fff; color: #1a1a1a; cursor: pointer; text-align: left; font-size: 13px; line-height: 1.5; transition: all 0.12s; font-family: inherit; }
   .opt-btn:hover { background: #f8f8f7; border-color: #bbb; }
-  .opt-btn.selected { border-color: #378ADD; background: #E6F1FB; color: #0C447C; }
+  .opt-btn.selected { border-color: #C0392B; background: #FFF0EE; color: #7B241C; }
   .opt-jp { font-size: 11px; color: #999; margin-top: 3px; }
-  .opt-btn.selected .opt-jp { color: #185FA5; }
+  .opt-btn.selected .opt-jp { color: #C0392B; }
   .nav { display: flex; justify-content: space-between; align-items: center; margin-top: 1.25rem; gap: 8px; }
-  .btn-primary { padding: 10px 22px; background: #378ADD; color: white; border: none; border-radius: 8px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: inherit; transition: background 0.15s; }
-  .btn-primary:hover { background: #2d7bc9; }
+  .btn-primary { padding: 10px 22px; background: #C0392B; color: white; border: none; border-radius: 8px; font-size: 14px; font-weight: 500; cursor: pointer; font-family: inherit; }
+  .btn-primary:hover { background: #a93226; }
   .btn-primary:disabled { opacity: 0.35; cursor: not-allowed; }
   .btn-secondary { padding: 10px 18px; background: transparent; color: #666; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; cursor: pointer; font-family: inherit; }
-  .btn-secondary:hover { background: #f5f5f3; }
   .step-info { font-size: 12px; color: #aaa; text-align: center; }
   .thank-you { text-align: center; padding: 2rem 1rem; }
-  .check-circle { width: 56px; height: 56px; background: #EAF3DE; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 26px; color: #3B6D11; }
+  .check-circle { width: 56px; height: 56px; background: #EAFAF1; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 26px; color: #145A32; }
   .email-setup { background: #f8f8f7; border-radius: 8px; padding: 1rem 1.25rem; margin-top: 1rem; font-size: 13px; color: #666; line-height: 1.8; }
   .email-setup strong { color: #1a1a1a; font-weight: 500; }
   .email-setup code { background: #fff; border: 1px solid #e0e0e0; padding: 1px 6px; border-radius: 4px; font-family: 'Courier New', monospace; font-size: 12px; color: #333; }
-  .email-setup a { color: #378ADD; }
+  .email-setup a { color: #C0392B; }
   .cfg-field { margin-bottom: 12px; }
   .cfg-field label { font-size: 13px; color: #666; font-weight: 400; margin-bottom: 4px; }
   .alert-error { font-size: 13px; color: #A32D2D; background: #FCEBEB; border-radius: 8px; padding: 10px 14px; margin-top: 8px; }
-  .btn-link { background: none; border: none; color: #378ADD; font-size: 13px; cursor: pointer; padding: 8px 0; font-family: inherit; text-decoration: underline; }
-  @media (max-width: 480px) {
-    .card { padding: 1.25rem; }
-    h1 { font-size: 19px; }
-  }
+  .alert-success { font-size: 13px; color: #145A32; background: #EAFAF1; border-radius: 8px; padding: 10px 14px; margin-top: 8px; }
+  .admin-badge { display: inline-block; background: #FFF0EE; color: #9B1C1C; font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 20px; margin-bottom: 1rem; border: 1px solid #FADBD8; }
 </style>
 </head>
 <body>
 <div class="app">
 
   <!-- ADMIN SETUP -->
-  <div id="screen-config">
+  <div id="screen-config" style="display:none;">
     <div class="card">
-      <h1>Admin setup</h1>
-      <p class="subtitle">Configure email delivery so results are sent to you after each submission. Participants will never see their results — they only see a thank-you screen.</p>
+      <div class="admin-badge">Admin mode</div>
+      <h1>EmailJS setup</h1>
+      <p class="subtitle">Enter your EmailJS credentials once. They are saved in this browser permanently. Participants use the link without <code>?admin</code> and land directly on the assessment — they never see this screen.</p>
       <div style="margin-top:1.25rem;">
         <div class="cfg-field"><label>EmailJS Service ID</label><input type="text" id="cfg-service" placeholder="service_xxxxxxx" /></div>
         <div class="cfg-field"><label>EmailJS Template ID</label><input type="text" id="cfg-template" placeholder="template_xxxxxxx" /></div>
         <div class="cfg-field"><label>EmailJS Public Key</label><input type="text" id="cfg-pubkey" placeholder="Your public key" /></div>
         <div class="cfg-field"><label>Your email (results recipient)</label><input type="text" id="cfg-email" placeholder="you@company.com" /></div>
         <div id="cfg-error" class="alert-error" style="display:none;"></div>
-        <button class="btn-primary" onclick="saveConfig()" style="margin-top:4px;width:100%;">Save &amp; launch assessment →</button>
+        <div id="cfg-success" class="alert-success" style="display:none;"></div>
+        <button class="btn-primary" onclick="saveConfig()" style="margin-top:8px;width:100%;">Save credentials →</button>
       </div>
-      <div class="email-setup">
-        <strong>EmailJS setup (free):</strong><br>
-        1. Sign up at <a href="https://emailjs.com" target="_blank">emailjs.com</a><br>
-        2. Add Gmail under <strong>Email Services</strong> — copy the <code>Service ID</code><br>
-        3. Create a template under <strong>Email Templates</strong> using variables <code>{{from_name}}</code> <code>{{results}}</code> <code>{{to_email}}</code> — copy the <code>Template ID</code><br>
-        4. Go to <strong>Account → API Keys</strong> — copy the <code>Public Key</code>
+      <div class="email-setup" style="margin-top:1rem;">
+        <strong>Your two links:</strong><br>
+        Admin setup (you only): <code>disc-assessment.html?admin</code><br>
+        Share with participants: <code>disc-assessment.html</code><br><br>
+        <strong>EmailJS reminder:</strong><br>
+        Service ID and Template ID from your EmailJS dashboard.<br>
+        Public Key under <strong>Account → API Keys</strong>.
       </div>
     </div>
-    <button class="btn-link" onclick="skipConfig()" style="display:block;margin:0 auto;text-align:center;">Skip setup — collect results locally only</button>
   </div>
 
   <!-- INTRO -->
@@ -139,64 +137,48 @@
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>
-const Q = [
-  {type:"situational",en:"When your team is falling behind on a deadline, your first instinct is to:",jp:"チームが締め切りに遅れているとき、あなたの最初の本能は：",opts:[{en:"Step in, take control, and set a clear action plan",jp:"介入して主導権を取り、明確なアクションプランを設定する",d:"D"},{en:"Energize the team and boost morale to push through",jp:"チームを活気づけ、士気を高めて乗り越える",d:"i"},{en:"Quietly support each person and keep the team steady",jp:"一人ひとりをそっとサポートし、チームを安定させる",d:"S"},{en:"Review the plan, find the gaps, and fix the process",jp:"計画を見直し、ギャップを見つけ、プロセスを修正する",d:"C"}]},
-  {type:"situational",en:"You are given a complex project with no clear instructions. You:",jp:"明確な指示のない複雑なプロジェクトを任されました。あなたは：",opts:[{en:"Dive in immediately and figure it out as you go",jp:"すぐに飛び込み、進めながら考える",d:"D"},{en:"Gather your team and brainstorm together",jp:"チームを集めて一緒にブレインストーミングする",d:"i"},{en:"Seek guidance first to ensure you're aligned",jp:"まず指針を求め、方向性を確認する",d:"S"},{en:"Research thoroughly and build a structured plan before starting",jp:"徹底的に調査し、始める前に構造化された計画を立てる",d:"C"}]},
-  {type:"situational",en:"A senior colleague openly disagrees with your idea in a meeting. You:",jp:"上級の同僚がミーティングであなたのアイデアに公然と反対しました。あなたは：",opts:[{en:"Defend your position confidently and debate the point",jp:"自信を持って自分の立場を守り、議論する",d:"D"},{en:"Keep it light, acknowledge their view, and find common ground",jp:"軽く流し、相手の意見を認め、共通点を見つける",d:"i"},{en:"Listen carefully and consider whether they might be right",jp:"注意深く聞き、相手が正しいかもしれないと考える",d:"S"},{en:"Ask for specific evidence to evaluate both sides logically",jp:"両側を論理的に評価するために具体的な証拠を求める",d:"C"}]},
-  {type:"situational",en:"Your organization announces a major, sudden restructure. You feel:",jp:"組織が突然の大規模な再編を発表しました。あなたは：",opts:[{en:"Energized — this is an opportunity to step up",jp:"やる気が出る — これはステップアップのチャンスだ",d:"D"},{en:"Curious and optimistic about what's possible",jp:"何が可能かについて好奇心と楽観を感じる",d:"i"},{en:"Cautious and concerned about the team's stability",jp:"慎重で、チームの安定性を心配する",d:"S"},{en:"Unsettled — you need more information before forming a view",jp:"落ち着かない — 意見を形成する前に詳細情報が必要",d:"C"}]},
-  {type:"situational",en:"You need to deliver difficult feedback to a direct report. You:",jp:"直属の部下に厳しいフィードバックを伝える必要があります。あなたは：",opts:[{en:"State it directly and get straight to the point",jp:"直接的に述べて、要点をすぐに伝える",d:"D"},{en:"Frame it warmly, mixing encouragement with the message",jp:"温かく伝え、励ましとメッセージを織り交ぜる",d:"i"},{en:"Choose your words carefully to protect the relationship",jp:"関係を守るために言葉を慎重に選ぶ",d:"S"},{en:"Prepare specific examples and a structured improvement plan",jp:"具体的な例と構造化された改善計画を準備する",d:"C"}]},
-  {type:"situational",en:"Two team members are in conflict and come to you for help. You:",jp:"2人のチームメンバーが対立し、助けを求めてきました。あなたは：",opts:[{en:"Make a clear decision on how to resolve it and move on",jp:"解決方法について明確な決定を下し、前進する",d:"D"},{en:"Bring them together to talk it out with positive energy",jp:"前向きなエネルギーで話し合うように集める",d:"i"},{en:"Listen to both sides patiently and help restore harmony",jp:"両者の話を辛抱強く聞き、調和を取り戻す",d:"S"},{en:"Investigate the root cause objectively before recommending anything",jp:"何かを勧める前に根本原因を客観的に調査する",d:"C"}]},
-  {type:"situational",en:"You have three urgent priorities and limited time. You:",jp:"緊急の優先事項が3つあり、時間が限られています。あなたは：",opts:[{en:"Tackle the highest-impact one first and push hard",jp:"最も影響の大きいものから取り組み、全力で進める",d:"D"},{en:"Delegate where possible and energize others to help",jp:"できる限り委任し、他者に助けを求める",d:"i"},{en:"Work through them methodically, one at a time",jp:"一つずつ、系統的に取り組む",d:"S"},{en:"Map out all three carefully, then execute with precision",jp:"3つすべてを慎重にマッピングしてから、正確に実行する",d:"C"}]},
-  {type:"situational",en:"You are presenting an idea to senior leadership that they seem skeptical about. You:",jp:"上級リーダーシップに対してアイデアを提案していますが、懐疑的なようです。あなたは：",opts:[{en:"Push the idea more forcefully and make the case boldly",jp:"アイデアをより力強く押し進め、大胆に主張する",d:"D"},{en:"Read the room and adjust your approach to win them over",jp:"場の雰囲気を読み、アプローチを調整して賛同を得る",d:"i"},{en:"Soften your tone and emphasize the team benefit",jp:"トーンを和らげ、チームへの利益を強調する",d:"S"},{en:"Address each concern with data and logical counter-arguments",jp:"データと論理的な反論で各懸念に対処する",d:"C"}]},
-  {type:"trait",en:"Which word describes you best at work?",jp:"職場でのあなたを最もよく表す言葉は：",opts:[{en:"Decisive",jp:"決断力がある",d:"D"},{en:"Energetic",jp:"エネルギッシュ",d:"i"},{en:"Reliable",jp:"信頼できる",d:"S"},{en:"Thorough",jp:"徹底的",d:"C"}]},
-  {type:"trait",en:"Your colleagues would most likely describe you as:",jp:"同僚があなたを説明するとしたら、最も当てはまるのは：",opts:[{en:"Direct and results-driven",jp:"率直で結果重視",d:"D"},{en:"Enthusiastic and people-focused",jp:"熱狂的で人を中心に考える",d:"i"},{en:"Patient and dependable",jp:"忍耐強く頼りになる",d:"S"},{en:"Careful and analytical",jp:"慎重で分析的",d:"C"}]},
-  {type:"trait",en:"In a group setting, you naturally tend to:",jp:"グループ環境では、あなたは自然に：",opts:[{en:"Lead and direct others",jp:"主導し、他者を指示する",d:"D"},{en:"Inspire and connect with people",jp:"インスパイアし、人々とつながる",d:"i"},{en:"Support and hold the group together",jp:"サポートし、グループをまとめる",d:"S"},{en:"Observe, assess, and advise",jp:"観察し、評価し、助言する",d:"C"}]},
-  {type:"trait",en:"When you are at your best, you are:",jp:"あなたが最良の状態にあるとき、あなたは：",opts:[{en:"Bold, focused, and unafraid of risk",jp:"大胆で集中力があり、リスクを恐れない",d:"D"},{en:"Creative, warm, and full of ideas",jp:"創造的で温かく、アイデアにあふれている",d:"i"},{en:"Steady, consistent, and deeply supportive",jp:"安定していて一貫性があり、深くサポートしている",d:"S"},{en:"Precise, logical, and highly prepared",jp:"正確で論理的で、準備万端",d:"C"}]},
-  {type:"trait",en:"What drains your energy most?",jp:"あなたのエネルギーを最も消耗させるのは：",opts:[{en:"Being micromanaged or slowed down",jp:"細かく管理されたり、スピードを落とされること",d:"D"},{en:"Working alone without social interaction",jp:"社会的交流なしに一人で働くこと",d:"i"},{en:"Constant change and unpredictability",jp:"絶え間ない変化と予測不可能性",d:"S"},{en:"Making decisions without enough information",jp:"十分な情報なしに決断を下すこと",d:"C"}]},
-  {type:"trait",en:"Your biggest strength as a leader is:",jp:"リーダーとしてのあなたの最大の強みは：",opts:[{en:"Getting things done quickly and driving outcomes",jp:"素早く物事を成し遂げ、結果を出す",d:"D"},{en:"Motivating people and building enthusiasm",jp:"人々を動機づけ、熱意を高める",d:"i"},{en:"Building loyalty and keeping the team cohesive",jp:"忠誠心を育み、チームの結束を保つ",d:"S"},{en:"Ensuring quality and minimizing errors",jp:"品質を確保し、ミスを最小限にする",d:"C"}]},
-  {type:"trait",en:"If you had to pick one, your leadership approach leans more toward:",jp:"一つ選ぶとすれば、あなたのリーダーシップアプローチは：",opts:[{en:"Challenge people and raise the bar",jp:"人々に挑戦させ、基準を上げる",d:"D"},{en:"Inspire people and make work meaningful",jp:"人々にインスパイアし、仕事に意味を与える",d:"i"},{en:"Support people and protect team wellbeing",jp:"人々をサポートし、チームの幸福を守る",d:"S"},{en:"Guide people with structure and expertise",jp:"構造と専門知識で人々を導く",d:"C"}]},
-  {type:"trait",en:"When you think about the word 'success', it means:",jp:"「成功」という言葉を考えるとき、それは意味する：",opts:[{en:"Winning, achieving the goal, and outperforming",jp:"勝つこと、目標を達成すること、上回ること",d:"D"},{en:"People growing, connecting, and thriving together",jp:"人々が成長し、つながり、共に繁栄すること",d:"i"},{en:"A stable, harmonious, and trusted team",jp:"安定した、調和のとれた、信頼されるチーム",d:"S"},{en:"Work done right — accurate, complete, and excellent",jp:"正確で、完全で、優れた仕事",d:"C"}]},
-  {type:"trait",en:"Under stress, you are most likely to:",jp:"ストレス下では、あなたは最も：",opts:[{en:"Become blunt, impatient, or controlling",jp:"率直になりすぎ、短気になるか、コントロールしようとする",d:"D"},{en:"Become scattered, emotional, or over-talkative",jp:"散漫になり、感情的になるか、話しすぎる",d:"i"},{en:"Become withdrawn, passive, or conflict-avoidant",jp:"引きこもり、受動的になるか、対立を避ける",d:"S"},{en:"Become overly critical, rigid, or analysis-paralyzed",jp:"過度に批判的になり、硬直するか、分析麻痺になる",d:"C"}]},
-  {type:"situational",en:"A new initiative needs someone to champion it across the organization. You:",jp:"組織全体でリードする人が必要な新しいイニシアチブがあります。あなたは：",opts:[{en:"Volunteer immediately — you're ready to own it",jp:"すぐに志願する — 責任を持つ準備ができている",d:"D"},{en:"Get excited and recruit others to join the cause",jp:"興奮し、取り組みに参加する人を募る",d:"i"},{en:"Support from behind and help others succeed in the role",jp:"後ろからサポートし、他者がその役割で成功するよう助ける",d:"S"},{en:"Assess feasibility carefully before committing",jp:"コミットする前に実現可能性を慎重に評価する",d:"C"}]},
-  {type:"situational",en:"You discover a significant error made by your team just before a client presentation. You:",jp:"クライアントのプレゼン直前にチームが大きなミスをしたことを発見しました。あなたは：",opts:[{en:"Fix it fast, decide what to disclose, and move forward",jp:"素早く修正し、何を開示するかを決め、前進する",d:"D"},{en:"Rally the team, stay positive, and manage the client's emotion",jp:"チームを結集し、前向きに保ち、クライアントの感情を管理する",d:"i"},{en:"Make sure the team feels supported while fixing the issue",jp:"問題を修正しながらチームがサポートされていると感じるようにする",d:"S"},{en:"Trace the root cause, fix it precisely, and put safeguards in place",jp:"根本原因を追跡し、正確に修正し、保護措置を設ける",d:"C"}]},
-  {type:"situational",en:"You are in a brainstorming session. Your role naturally becomes:",jp:"ブレインストーミングセッションにいます。あなたの役割は自然と：",opts:[{en:"Pushing for the boldest, most ambitious ideas",jp:"最も大胆で野心的なアイデアを推し進める",d:"D"},{en:"Generating ideas and building energy in the room",jp:"アイデアを生み出し、場のエネルギーを高める",d:"i"},{en:"Building on others' ideas and keeping the group inclusive",jp:"他者のアイデアを発展させ、グループを包括的に保つ",d:"S"},{en:"Evaluating ideas critically for feasibility and risk",jp:"実現可能性とリスクのためにアイデアを批判的に評価する",d:"C"}]},
-  {type:"situational",en:"When onboarding a new team member, you tend to:",jp:"新しいチームメンバーのオンボーディングをするとき、あなたは：",opts:[{en:"Give them clear expectations and let them get on with it",jp:"明確な期待を伝え、自分でやってもらう",d:"D"},{en:"Introduce them warmly to everyone and make them feel welcome",jp:"温かく全員に紹介し、歓迎されていると感じさせる",d:"i"},{en:"Walk them through everything carefully and check in regularly",jp:"すべてを丁寧に案内し、定期的に確認する",d:"S"},{en:"Provide thorough documentation and structured guidance",jp:"徹底的なドキュメントと構造化されたガイダンスを提供する",d:"C"}]},
-  {type:"situational",en:"When a project you led did not achieve its goal, you:",jp:"あなたが主導したプロジェクトが目標を達成できなかったとき、あなたは：",opts:[{en:"Accept it, extract the lesson, and move quickly to the next thing",jp:"受け入れ、教訓を引き出し、すぐに次のことに移る",d:"D"},{en:"Reframe it positively for the team and focus on what was learned",jp:"チームに前向きに再解釈し、何を学んだかに集中する",d:"i"},{en:"Focus on making sure the team feels okay about it",jp:"チームがそれについて大丈夫だと感じることを確認することに集中する",d:"S"},{en:"Conduct a thorough debrief and document lessons learned",jp:"徹底的な振り返りを行い、学んだ教訓を記録する",d:"C"}]},
-  {type:"situational",en:"You notice a team member is disengaged and underperforming. You:",jp:"チームメンバーが無気力で低パフォーマンスであることに気づきました。あなたは：",opts:[{en:"Address it directly and set clear performance expectations",jp:"直接対処し、明確なパフォーマンス期待を設定する",d:"D"},{en:"Have an informal, upbeat conversation to reconnect",jp:"インフォーマルで前向きな会話をして再接続する",d:"i"},{en:"Check in gently and find out if something personal is going on",jp:"優しく確認し、個人的なことが起きているかを確認する",d:"S"},{en:"Observe the pattern first and then have a structured discussion",jp:"まずパターンを観察し、その後構造化された議論を行う",d:"C"}]},
-  {type:"trait",en:"Which phrase resonates most with how you approach your work?",jp:"仕事への取り組み方として最も共感するフレーズは：",opts:[{en:"\"Get it done — fast and well\"",jp:"「すぐに、そして上手くやる」",d:"D"},{en:"\"People first — everything else follows\"",jp:"「まず人 — あとはついてくる」",d:"i"},{en:"\"Slow and steady wins the race\"",jp:"「ゆっくり着実に競争に勝つ」",d:"S"},{en:"\"Measure twice, cut once\"",jp:"「二度測って一度切る」",d:"C"}]},
-  {type:"trait",en:"When you have downtime, you most naturally gravitate toward:",jp:"余暇があるとき、あなたが自然と引き寄せられるのは：",opts:[{en:"Taking on a personal challenge or competitive activity",jp:"個人的な挑戦や競争的な活動",d:"D"},{en:"Socializing, connecting, or doing something fun with others",jp:"社交、交流、または他者と楽しいことをする",d:"i"},{en:"Relaxing with close ones in a calm, comfortable setting",jp:"穏やかで快適な場所で身近な人と過ごす",d:"S"},{en:"Pursuing a solo interest — learning, reading, or creating",jp:"一人の趣味 — 学ぶ、読む、または創造する",d:"C"}]},
-  {type:"trait",en:"The type of recognition that means most to you is:",jp:"あなたにとって最も意味のある認識は：",opts:[{en:"Being acknowledged for results and impact",jp:"結果と影響力を認められること",d:"D"},{en:"Public praise and feeling appreciated by the group",jp:"公の賞賛とグループに感謝されること",d:"i"},{en:"A sincere, personal thank-you from someone you respect",jp:"尊敬する人からの誠実で個人的なお礼",d:"S"},{en:"Seeing your work implemented and done to a high standard",jp:"自分の仕事が高い基準で実施されるのを見ること",d:"C"}]},
-  {type:"trait",en:"Your relationship with rules and processes is:",jp:"ルールやプロセスに対するあなたの関係は：",opts:[{en:"I challenge them if they slow me down",jp:"邪魔になるなら挑戦する",d:"D"},{en:"I bend them when relationships or creativity demand it",jp:"関係性や創造性が求めるときは曲げる",d:"i"},{en:"I follow them — consistency and predictability matter",jp:"従う — 一貫性と予測可能性は重要",d:"S"},{en:"I follow them closely — they exist for good reason",jp:"厳密に従う — 理由があって存在している",d:"C"}]},
-  {type:"trait",en:"In a high-stakes moment, your instinct is to:",jp:"重要な瞬間に、あなたの本能は：",opts:[{en:"Take charge and act decisively",jp:"主導権を取り、果断に行動する",d:"D"},{en:"Inspire confidence in others and rally the group",jp:"他者に自信を与え、グループを結集する",d:"i"},{en:"Stay calm and anchor others around you",jp:"冷静を保ち、周囲の人たちを安定させる",d:"S"},{en:"Fall back on preparation and execute with precision",jp:"準備に立ち返り、正確に実行する",d:"C"}]},
-  {type:"trait",en:"How important is it to you that others like you?",jp:"他者にあなたを好いてもらうことはどれほど重要ですか：",opts:[{en:"Less important than being respected for results",jp:"結果に対して尊重されることの方が重要",d:"D"},{en:"Very — warm relationships energize and motivate me",jp:"とても重要 — 温かい関係が私を元気づけ、動機づける",d:"i"},{en:"Very — I value harmony and a sense of belonging",jp:"とても重要 — 調和と帰属意識を大切にする",d:"S"},{en:"I prefer to be respected for competence over being liked",jp:"好かれることよりも能力で尊重されることを好む",d:"C"}]},
-  {type:"trait",en:"Which of these reflects your natural pace of working?",jp:"これらの中であなたの自然な仕事のペースを最もよく反映しているのは：",opts:[{en:"Fast — I like momentum and hate stalling",jp:"速い — 勢いが好きで、停滞が嫌い",d:"D"},{en:"Varied — I surge when inspired and slow when not",jp:"様々 — インスパイアされると加速し、そうでないと遅い",d:"i"},{en:"Steady — I like a consistent, sustainable rhythm",jp:"安定した — 一貫性のある持続可能なリズムが好き",d:"S"},{en:"Measured — I take the time needed to do it right",jp:"慎重 — 正しく行うために必要な時間をかける",d:"C"}]},
-  {type:"trait",en:"When you imagine your ideal leadership legacy, it is:",jp:"理想のリーダーシップの遺産を想像するとき、それは：",opts:[{en:"Transforming the organization and achieving bold results",jp:"組織を変革し、大胆な結果を達成すること",d:"D"},{en:"Inspiring and developing people who go on to greatness",jp:"偉大さに至る人々をインスパイアし育成すること",d:"i"},{en:"Building a team people loved being part of",jp:"人々が所属することを愛したチームを築くこと",d:"S"},{en:"Creating systems and standards that outlast you",jp:"あなたより長く続くシステムと基準を作ること",d:"C"}]}
-];
+const Q=[{type:"situational",en:"When your team is falling behind on a deadline, your first instinct is to:",jp:"チームが締め切りに遅れているとき、あなたの最初の本能は：",opts:[{en:"Step in, take control, and set a clear action plan",jp:"介入して主導権を取り、明確なアクションプランを設定する",d:"D"},{en:"Energize the team and boost morale to push through",jp:"チームを活気づけ、士気を高めて乗り越える",d:"i"},{en:"Quietly support each person and keep the team steady",jp:"一人ひとりをそっとサポートし、チームを安定させる",d:"S"},{en:"Review the plan, find the gaps, and fix the process",jp:"計画を見直し、ギャップを見つけ、プロセスを修正する",d:"C"}]},{type:"situational",en:"You are given a complex project with no clear instructions. You:",jp:"明確な指示のない複雑なプロジェクトを任されました。あなたは：",opts:[{en:"Dive in immediately and figure it out as you go",jp:"すぐに飛び込み、進めながら考える",d:"D"},{en:"Gather your team and brainstorm together",jp:"チームを集めて一緒にブレインストーミングする",d:"i"},{en:"Seek guidance first to ensure you're aligned",jp:"まず指針を求め、方向性を確認する",d:"S"},{en:"Research thoroughly and build a structured plan before starting",jp:"徹底的に調査し、始める前に構造化された計画を立てる",d:"C"}]},{type:"situational",en:"A senior colleague openly disagrees with your idea in a meeting. You:",jp:"上級の同僚がミーティングであなたのアイデアに公然と反対しました。あなたは：",opts:[{en:"Defend your position confidently and debate the point",jp:"自信を持って自分の立場を守り、議論する",d:"D"},{en:"Keep it light, acknowledge their view, and find common ground",jp:"軽く流し、相手の意見を認め、共通点を見つける",d:"i"},{en:"Listen carefully and consider whether they might be right",jp:"注意深く聞き、相手が正しいかもしれないと考える",d:"S"},{en:"Ask for specific evidence to evaluate both sides logically",jp:"両側を論理的に評価するために具体的な証拠を求める",d:"C"}]},{type:"situational",en:"Your organization announces a major, sudden restructure. You feel:",jp:"組織が突然の大規模な再編を発表しました。あなたは：",opts:[{en:"Energized — this is an opportunity to step up",jp:"やる気が出る — これはステップアップのチャンスだ",d:"D"},{en:"Curious and optimistic about what's possible",jp:"何が可能かについて好奇心と楽観を感じる",d:"i"},{en:"Cautious and concerned about the team's stability",jp:"慎重で、チームの安定性を心配する",d:"S"},{en:"Unsettled — you need more information before forming a view",jp:"落ち着かない — 意見を形成する前に詳細情報が必要",d:"C"}]},{type:"situational",en:"You need to deliver difficult feedback to a direct report. You:",jp:"直属の部下に厳しいフィードバックを伝える必要があります。あなたは：",opts:[{en:"State it directly and get straight to the point",jp:"直接的に述べて、要点をすぐに伝える",d:"D"},{en:"Frame it warmly, mixing encouragement with the message",jp:"温かく伝え、励ましとメッセージを織り交ぜる",d:"i"},{en:"Choose your words carefully to protect the relationship",jp:"関係を守るために言葉を慎重に選ぶ",d:"S"},{en:"Prepare specific examples and a structured improvement plan",jp:"具体的な例と構造化された改善計画を準備する",d:"C"}]},{type:"situational",en:"Two team members are in conflict and come to you for help. You:",jp:"2人のチームメンバーが対立し、助けを求めてきました。あなたは：",opts:[{en:"Make a clear decision on how to resolve it and move on",jp:"解決方法について明確な決定を下し、前進する",d:"D"},{en:"Bring them together to talk it out with positive energy",jp:"前向きなエネルギーで話し合うように集める",d:"i"},{en:"Listen to both sides patiently and help restore harmony",jp:"両者の話を辛抱強く聞き、調和を取り戻す",d:"S"},{en:"Investigate the root cause objectively before recommending anything",jp:"何かを勧める前に根本原因を客観的に調査する",d:"C"}]},{type:"situational",en:"You have three urgent priorities and limited time. You:",jp:"緊急の優先事項が3つあり、時間が限られています。あなたは：",opts:[{en:"Tackle the highest-impact one first and push hard",jp:"最も影響の大きいものから取り組み、全力で進める",d:"D"},{en:"Delegate where possible and energize others to help",jp:"できる限り委任し、他者に助けを求める",d:"i"},{en:"Work through them methodically, one at a time",jp:"一つずつ、系統的に取り組む",d:"S"},{en:"Map out all three carefully, then execute with precision",jp:"3つすべてを慎重にマッピングしてから、正確に実行する",d:"C"}]},{type:"situational",en:"You are presenting an idea to senior leadership that they seem skeptical about. You:",jp:"上級リーダーシップに対してアイデアを提案していますが、懐疑的なようです。あなたは：",opts:[{en:"Push the idea more forcefully and make the case boldly",jp:"アイデアをより力強く押し進め、大胆に主張する",d:"D"},{en:"Read the room and adjust your approach to win them over",jp:"場の雰囲気を読み、アプローチを調整して賛同を得る",d:"i"},{en:"Soften your tone and emphasize the team benefit",jp:"トーンを和らげ、チームへの利益を強調する",d:"S"},{en:"Address each concern with data and logical counter-arguments",jp:"データと論理的な反論で各懸念に対処する",d:"C"}]},{type:"trait",en:"Which word describes you best at work?",jp:"職場でのあなたを最もよく表す言葉は：",opts:[{en:"Decisive",jp:"決断力がある",d:"D"},{en:"Energetic",jp:"エネルギッシュ",d:"i"},{en:"Reliable",jp:"信頼できる",d:"S"},{en:"Thorough",jp:"徹底的",d:"C"}]},{type:"trait",en:"Your colleagues would most likely describe you as:",jp:"同僚があなたを説明するとしたら、最も当てはまるのは：",opts:[{en:"Direct and results-driven",jp:"率直で結果重視",d:"D"},{en:"Enthusiastic and people-focused",jp:"熱狂的で人を中心に考える",d:"i"},{en:"Patient and dependable",jp:"忍耐強く頼りになる",d:"S"},{en:"Careful and analytical",jp:"慎重で分析的",d:"C"}]},{type:"trait",en:"In a group setting, you naturally tend to:",jp:"グループ環境では、あなたは自然に：",opts:[{en:"Lead and direct others",jp:"主導し、他者を指示する",d:"D"},{en:"Inspire and connect with people",jp:"インスパイアし、人々とつながる",d:"i"},{en:"Support and hold the group together",jp:"サポートし、グループをまとめる",d:"S"},{en:"Observe, assess, and advise",jp:"観察し、評価し、助言する",d:"C"}]},{type:"trait",en:"When you are at your best, you are:",jp:"あなたが最良の状態にあるとき、あなたは：",opts:[{en:"Bold, focused, and unafraid of risk",jp:"大胆で集中力があり、リスクを恐れない",d:"D"},{en:"Creative, warm, and full of ideas",jp:"創造的で温かく、アイデアにあふれている",d:"i"},{en:"Steady, consistent, and deeply supportive",jp:"安定していて一貫性があり、深くサポートしている",d:"S"},{en:"Precise, logical, and highly prepared",jp:"正確で論理的で、準備万端",d:"C"}]},{type:"trait",en:"What drains your energy most?",jp:"あなたのエネルギーを最も消耗させるのは：",opts:[{en:"Being micromanaged or slowed down",jp:"細かく管理されたり、スピードを落とされること",d:"D"},{en:"Working alone without social interaction",jp:"社会的交流なしに一人で働くこと",d:"i"},{en:"Constant change and unpredictability",jp:"絶え間ない変化と予測不可能性",d:"S"},{en:"Making decisions without enough information",jp:"十分な情報なしに決断を下すこと",d:"C"}]},{type:"trait",en:"Your biggest strength as a leader is:",jp:"リーダーとしてのあなたの最大の強みは：",opts:[{en:"Getting things done quickly and driving outcomes",jp:"素早く物事を成し遂げ、結果を出す",d:"D"},{en:"Motivating people and building enthusiasm",jp:"人々を動機づけ、熱意を高める",d:"i"},{en:"Building loyalty and keeping the team cohesive",jp:"忠誠心を育み、チームの結束を保つ",d:"S"},{en:"Ensuring quality and minimizing errors",jp:"品質を確保し、ミスを最小限にする",d:"C"}]},{type:"trait",en:"If you had to pick one, your leadership approach leans more toward:",jp:"一つ選ぶとすれば、あなたのリーダーシップアプローチは：",opts:[{en:"Challenge people and raise the bar",jp:"人々に挑戦させ、基準を上げる",d:"D"},{en:"Inspire people and make work meaningful",jp:"人々にインスパイアし、仕事に意味を与える",d:"i"},{en:"Support people and protect team wellbeing",jp:"人々をサポートし、チームの幸福を守る",d:"S"},{en:"Guide people with structure and expertise",jp:"構造と専門知識で人々を導く",d:"C"}]},{type:"trait",en:"When you think about the word 'success', it means:",jp:"「成功」という言葉を考えるとき、それは意味する：",opts:[{en:"Winning, achieving the goal, and outperforming",jp:"勝つこと、目標を達成すること、上回ること",d:"D"},{en:"People growing, connecting, and thriving together",jp:"人々が成長し、つながり、共に繁栄すること",d:"i"},{en:"A stable, harmonious, and trusted team",jp:"安定した、調和のとれた、信頼されるチーム",d:"S"},{en:"Work done right — accurate, complete, and excellent",jp:"正確で、完全で、優れた仕事",d:"C"}]},{type:"trait",en:"Under stress, you are most likely to:",jp:"ストレス下では、あなたは最も：",opts:[{en:"Become blunt, impatient, or controlling",jp:"率直になりすぎ、短気になるか、コントロールしようとする",d:"D"},{en:"Become scattered, emotional, or over-talkative",jp:"散漫になり、感情的になるか、話しすぎる",d:"i"},{en:"Become withdrawn, passive, or conflict-avoidant",jp:"引きこもり、受動的になるか、対立を避ける",d:"S"},{en:"Become overly critical, rigid, or analysis-paralyzed",jp:"過度に批判的になり、硬直するか、分析麻痺になる",d:"C"}]},{type:"situational",en:"A new initiative needs someone to champion it across the organization. You:",jp:"組織全体でリードする人が必要な新しいイニシアチブがあります。あなたは：",opts:[{en:"Volunteer immediately — you're ready to own it",jp:"すぐに志願する — 責任を持つ準備ができている",d:"D"},{en:"Get excited and recruit others to join the cause",jp:"興奮し、取り組みに参加する人を募る",d:"i"},{en:"Support from behind and help others succeed in the role",jp:"後ろからサポートし、他者がその役割で成功するよう助ける",d:"S"},{en:"Assess feasibility carefully before committing",jp:"コミットする前に実現可能性を慎重に評価する",d:"C"}]},{type:"situational",en:"You discover a significant error made by your team just before a client presentation. You:",jp:"クライアントのプレゼン直前にチームが大きなミスをしたことを発見しました。あなたは：",opts:[{en:"Fix it fast, decide what to disclose, and move forward",jp:"素早く修正し、何を開示するかを決め、前進する",d:"D"},{en:"Rally the team, stay positive, and manage the client's emotion",jp:"チームを結集し、前向きに保ち、クライアントの感情を管理する",d:"i"},{en:"Make sure the team feels supported while fixing the issue",jp:"問題を修正しながらチームがサポートされていると感じるようにする",d:"S"},{en:"Trace the root cause, fix it precisely, and put safeguards in place",jp:"根本原因を追跡し、正確に修正し、保護措置を設ける",d:"C"}]},{type:"situational",en:"You are in a brainstorming session. Your role naturally becomes:",jp:"ブレインストーミングセッションにいます。あなたの役割は自然と：",opts:[{en:"Pushing for the boldest, most ambitious ideas",jp:"最も大胆で野心的なアイデアを推し進める",d:"D"},{en:"Generating ideas and building energy in the room",jp:"アイデアを生み出し、場のエネルギーを高める",d:"i"},{en:"Building on others' ideas and keeping the group inclusive",jp:"他者のアイデアを発展させ、グループを包括的に保つ",d:"S"},{en:"Evaluating ideas critically for feasibility and risk",jp:"実現可能性とリスクのためにアイデアを批判的に評価する",d:"C"}]},{type:"situational",en:"When onboarding a new team member, you tend to:",jp:"新しいチームメンバーのオンボーディングをするとき、あなたは：",opts:[{en:"Give them clear expectations and let them get on with it",jp:"明確な期待を伝え、自分でやってもらう",d:"D"},{en:"Introduce them warmly to everyone and make them feel welcome",jp:"温かく全員に紹介し、歓迎されていると感じさせる",d:"i"},{en:"Walk them through everything carefully and check in regularly",jp:"すべてを丁寧に案内し、定期的に確認する",d:"S"},{en:"Provide thorough documentation and structured guidance",jp:"徹底的なドキュメントと構造化されたガイダンスを提供する",d:"C"}]},{type:"situational",en:"When a project you led did not achieve its goal, you:",jp:"あなたが主導したプロジェクトが目標を達成できなかったとき、あなたは：",opts:[{en:"Accept it, extract the lesson, and move quickly to the next thing",jp:"受け入れ、教訓を引き出し、すぐに次のことに移る",d:"D"},{en:"Reframe it positively for the team and focus on what was learned",jp:"チームに前向きに再解釈し、何を学んだかに集中する",d:"i"},{en:"Focus on making sure the team feels okay about it",jp:"チームがそれについて大丈夫だと感じることを確認することに集中する",d:"S"},{en:"Conduct a thorough debrief and document lessons learned",jp:"徹底的な振り返りを行い、学んだ教訓を記録する",d:"C"}]},{type:"situational",en:"You notice a team member is disengaged and underperforming. You:",jp:"チームメンバーが無気力で低パフォーマンスであることに気づきました。あなたは：",opts:[{en:"Address it directly and set clear performance expectations",jp:"直接対処し、明確なパフォーマンス期待を設定する",d:"D"},{en:"Have an informal, upbeat conversation to reconnect",jp:"インフォーマルで前向きな会話をして再接続する",d:"i"},{en:"Check in gently and find out if something personal is going on",jp:"優しく確認し、個人的なことが起きているかを確認する",d:"S"},{en:"Observe the pattern first and then have a structured discussion",jp:"まずパターンを観察し、その後構造化された議論を行う",d:"C"}]},{type:"trait",en:"Which phrase resonates most with how you approach your work?",jp:"仕事への取り組み方として最も共感するフレーズは：",opts:[{en:"\"Get it done — fast and well\"",jp:"「すぐに、そして上手くやる」",d:"D"},{en:"\"People first — everything else follows\"",jp:"「まず人 — あとはついてくる」",d:"i"},{en:"\"Slow and steady wins the race\"",jp:"「ゆっくり着実に競争に勝つ」",d:"S"},{en:"\"Measure twice, cut once\"",jp:"「二度測って一度切る」",d:"C"}]},{type:"trait",en:"When you have downtime, you most naturally gravitate toward:",jp:"余暇があるとき、あなたが自然と引き寄せられるのは：",opts:[{en:"Taking on a personal challenge or competitive activity",jp:"個人的な挑戦や競争的な活動",d:"D"},{en:"Socializing, connecting, or doing something fun with others",jp:"社交、交流、または他者と楽しいことをする",d:"i"},{en:"Relaxing with close ones in a calm, comfortable setting",jp:"穏やかで快適な場所で身近な人と過ごす",d:"S"},{en:"Pursuing a solo interest — learning, reading, or creating",jp:"一人の趣味 — 学ぶ、読む、または創造する",d:"C"}]},{type:"trait",en:"The type of recognition that means most to you is:",jp:"あなたにとって最も意味のある認識は：",opts:[{en:"Being acknowledged for results and impact",jp:"結果と影響力を認められること",d:"D"},{en:"Public praise and feeling appreciated by the group",jp:"公の賞賛とグループに感謝されること",d:"i"},{en:"A sincere, personal thank-you from someone you respect",jp:"尊敬する人からの誠実で個人的なお礼",d:"S"},{en:"Seeing your work implemented and done to a high standard",jp:"自分の仕事が高い基準で実施されるのを見ること",d:"C"}]},{type:"trait",en:"Your relationship with rules and processes is:",jp:"ルールやプロセスに対するあなたの関係は：",opts:[{en:"I challenge them if they slow me down",jp:"邪魔になるなら挑戦する",d:"D"},{en:"I bend them when relationships or creativity demand it",jp:"関係性や創造性が求めるときは曲げる",d:"i"},{en:"I follow them — consistency and predictability matter",jp:"従う — 一貫性と予測可能性は重要",d:"S"},{en:"I follow them closely — they exist for good reason",jp:"厳密に従う — 理由があって存在している",d:"C"}]},{type:"trait",en:"In a high-stakes moment, your instinct is to:",jp:"重要な瞬間に、あなたの本能は：",opts:[{en:"Take charge and act decisively",jp:"主導権を取り、果断に行動する",d:"D"},{en:"Inspire confidence in others and rally the group",jp:"他者に自信を与え、グループを結集する",d:"i"},{en:"Stay calm and anchor others around you",jp:"冷静を保ち、周囲の人たちを安定させる",d:"S"},{en:"Fall back on preparation and execute with precision",jp:"準備に立ち返り、正確に実行する",d:"C"}]},{type:"trait",en:"How important is it to you that others like you?",jp:"他者にあなたを好いてもらうことはどれほど重要ですか：",opts:[{en:"Less important than being respected for results",jp:"結果に対して尊重されることの方が重要",d:"D"},{en:"Very — warm relationships energize and motivate me",jp:"とても重要 — 温かい関係が私を元気づけ、動機づける",d:"i"},{en:"Very — I value harmony and a sense of belonging",jp:"とても重要 — 調和と帰属意識を大切にする",d:"S"},{en:"I prefer to be respected for competence over being liked",jp:"好かれることよりも能力で尊重されることを好む",d:"C"}]},{type:"trait",en:"Which of these reflects your natural pace of working?",jp:"これらの中であなたの自然な仕事のペースを最もよく反映しているのは：",opts:[{en:"Fast — I like momentum and hate stalling",jp:"速い — 勢いが好きで、停滞が嫌い",d:"D"},{en:"Varied — I surge when inspired and slow when not",jp:"様々 — インスパイアされると加速し、そうでないと遅い",d:"i"},{en:"Steady — I like a consistent, sustainable rhythm",jp:"安定した — 一貫性のある持続可能なリズムが好き",d:"S"},{en:"Measured — I take the time needed to do it right",jp:"慎重 — 正しく行うために必要な時間をかける",d:"C"}]},{type:"trait",en:"When you imagine your ideal leadership legacy, it is:",jp:"理想のリーダーシップの遺産を想像するとき、それは：",opts:[{en:"Transforming the organization and achieving bold results",jp:"組織を変革し、大胆な結果を達成すること",d:"D"},{en:"Inspiring and developing people who go on to greatness",jp:"偉大さに至る人々をインスパイアし育成すること",d:"i"},{en:"Building a team people loved being part of",jp:"人々が所属することを愛したチームを築くこと",d:"S"},{en:"Creating systems and standards that outlast you",jp:"あなたより長く続くシステムと基準を作ること",d:"C"}]}];
 
-let current=0, answers=[], participantName="", lang="en";
+const COLOR_MAP={D:{color:'#E74C3C',name:'Red',en:'Execution',jp:'実行型'},i:{color:'#F1C40F',name:'Yellow',en:'Vision',jp:'ビジョン型'},S:{color:'#27AE60',name:'Green',en:'People',jp:'人重視型'},C:{color:'#2980B9',name:'Blue',en:'Structure',jp:'構造型'}};
+const STORAGE_KEY="disc_emailjs_config";
+let current=0,answers=[],participantName="",lang="en";
 let emailConfig={service:"",template:"",pubkey:"",email:""};
-let skipEmail=false;
 
 function show(s){["config","intro","question","done"].forEach(id=>{document.getElementById("screen-"+id).style.display=id===s?"block":"none";});}
 function setLang(l,btn){lang=l;document.querySelectorAll(".lang-btn").forEach(b=>b.classList.remove("active"));if(btn)btn.classList.add("active");if(document.getElementById("screen-question").style.display!=="none")renderQuestion();}
+
 function saveConfig(){
-  const s=document.getElementById("cfg-service").value.trim();
-  const t=document.getElementById("cfg-template").value.trim();
-  const p=document.getElementById("cfg-pubkey").value.trim();
-  const e=document.getElementById("cfg-email").value.trim();
-  const err=document.getElementById("cfg-error");
-  if(!s||!t||!p||!e){err.textContent="Please fill in all four fields.";err.style.display="block";return;}
+  const s=g("cfg-service"),t=g("cfg-template"),p=g("cfg-pubkey"),e=g("cfg-email");
+  const err=document.getElementById("cfg-error"),suc=document.getElementById("cfg-success");
+  if(!s||!t||!p||!e){err.textContent="Please fill in all four fields.";err.style.display="block";suc.style.display="none";return;}
   err.style.display="none";
   emailConfig={service:s,template:t,pubkey:p,email:e};
+  localStorage.setItem(STORAGE_KEY,JSON.stringify(emailConfig));
   emailjs.init(p);
-  show("intro");
+  suc.textContent="Credentials saved. Share the link without ?admin with your participants.";
+  suc.style.display="block";
 }
-function skipConfig(){skipEmail=true;show("intro");}
+
+function loadConfig(){
+  try{
+    const saved=localStorage.getItem(STORAGE_KEY);
+    if(saved){
+      emailConfig=JSON.parse(saved);
+      document.getElementById("cfg-service").value=emailConfig.service||"";
+      document.getElementById("cfg-template").value=emailConfig.template||"";
+      document.getElementById("cfg-pubkey").value=emailConfig.pubkey||"";
+      document.getElementById("cfg-email").value=emailConfig.email||"";
+      if(emailConfig.pubkey)emailjs.init(emailConfig.pubkey);
+    }
+  }catch(e){}
+}
+
 function startAssessment(){
   participantName=document.getElementById("participant-name").value.trim();
   if(!participantName){alert(lang==="en"?"Please enter your name.":"お名前を入力してください。");return;}
   current=0;answers=[];show("question");renderQuestion();
 }
+
 function renderQuestion(){
   const q=Q[current],total=Q.length,pct=Math.round((current/total)*100);
   document.getElementById("progress-fill").style.width=pct+"%";
@@ -216,38 +198,48 @@ function renderQuestion(){
     btn.onclick=()=>selectOption(idx);
     container.appendChild(btn);
   });
-  const nextBtn=document.getElementById("next-btn");
-  nextBtn.disabled=answers[current]===undefined;
-  nextBtn.textContent=current===total-1?(lang==="en"?"Submit ✓":"送信 ✓"):(lang==="en"?"Next →":"次へ →");
+  const nb=document.getElementById("next-btn");
+  nb.disabled=answers[current]===undefined;
+  nb.textContent=current===total-1?(lang==="en"?"Submit ✓":"送信 ✓"):(lang==="en"?"Next →":"次へ →");
   document.getElementById("back-btn").style.visibility=current===0?"hidden":"visible";
   document.getElementById("step-info").textContent=lang==="en"?`${pct}% complete`:`${pct}% 完了`;
 }
+
 function selectOption(idx){
   answers[current]=idx;
   document.querySelectorAll(".opt-btn").forEach((b,i)=>b.classList.toggle("selected",i===idx));
   document.getElementById("next-btn").disabled=false;
 }
+
 function goBack(){if(current>0){current--;renderQuestion();}}
 function goNext(){
   if(answers[current]===undefined)return;
   if(current<Q.length-1){current++;renderQuestion();}
   else submitResults();
 }
+
 function submitResults(){
   const scores={D:0,i:0,S:0,C:0};
   answers.forEach((ans,qi)=>{scores[Q[qi].opts[ans].d]++;});
-  const total=Q.length;
-  const pct={};Object.keys(scores).forEach(k=>pct[k]=Math.round((scores[k]/total)*100));
-  const nameMap={D:"Dominant",i:"Influential",S:"Steady",C:"Conscientious"};
+  const total=Q.length,pct={};
+  Object.keys(scores).forEach(k=>pct[k]=Math.round((scores[k]/total)*100));
   const sorted=Object.keys(pct).sort((a,b)=>pct[b]-pct[a]);
-  const primary=sorted[0],secondary=sorted[1];
-  const resultText=`=== DiSC Assessment Result ===\nName: ${participantName}\nPrimary style: ${nameMap[primary]} (${primary}) — ${pct[primary]}%\nSecondary style: ${nameMap[secondary]} (${secondary}) — ${pct[secondary]}%\n\nFull breakdown:\n  D – Dominant:      ${pct.D}%\n  i – Influential:   ${pct.i}%\n  S – Steady:        ${pct.S}%\n  C – Conscientious: ${pct.C}%`;
-  if(!skipEmail&&emailConfig.service){
+  const pri=sorted[0],sec=sorted[1],cm=COLOR_MAP;
+  const resultText=`=== DiSC Assessment Result ===\nName: ${participantName}\nPrimary style: ${cm[pri].name} — ${cm[pri].en} (${pri}) — ${pct[pri]}%\nSecondary style: ${cm[sec].name} — ${cm[sec].en} (${sec}) — ${pct[sec]}%\n\nFull breakdown:\n  D – Dominant (Red / Execution):        ${pct.D}%\n  i – Influential (Yellow / Vision):     ${pct.i}%\n  S – Steady (Green / People):           ${pct.S}%\n  C – Conscientious (Blue / Structure):  ${pct.C}%`;
+  if(emailConfig.service&&emailConfig.template&&emailConfig.pubkey){
     emailjs.send(emailConfig.service,emailConfig.template,{from_name:participantName,to_email:emailConfig.email,results:resultText}).catch(()=>{});
   }
   show("done");
 }
-window.onload=()=>show("config");
+
+function g(id){return document.getElementById(id).value.trim();}
+
+window.onload=()=>{
+  const isAdmin=window.location.search.includes("admin");
+  loadConfig();
+  if(isAdmin){show("config");}
+  else{show("intro");}
+};
 </script>
 </body>
 </html>
