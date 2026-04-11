@@ -62,7 +62,7 @@
       <div class="admin-badge">Admin mode</div>
       <div class="sheets-badge">Google Sheets backup active</div>
       <h1 style="margin-top:12px;">EmailJS setup</h1>
-      <p class="subtitle">Enter your EmailJS credentials. Results are also automatically saved to Google Sheets on every submission as a backup — so even if email fails, nothing is lost.</p>
+      <p class="subtitle">Enter your EmailJS credentials. Results are also automatically saved to Google Sheets on every submission — so even if email fails, nothing is lost.</p>
       <div style="margin-top:1.25rem;">
         <div class="cfg-field"><label>EmailJS Service ID</label><input type="text" id="cfg-service" placeholder="service_xxxxxxx" /></div>
         <div class="cfg-field"><label>EmailJS Template ID</label><input type="text" id="cfg-template" placeholder="template_xxxxxxx" /></div>
@@ -76,8 +76,7 @@
         <strong>Your two links:</strong><br>
         Admin setup (you only): <code>disc-assessment.html?admin</code><br>
         Share with participants: <code>disc-assessment.html</code><br><br>
-        <strong>Google Sheets backup:</strong> All results are automatically saved to your sheet at<br>
-        <a href="https://script.google.com/macros/s/AKfycbz1j9L01f-s_3EjQpkLF98Z6uXUWk7yqFk2A39ZQxFpv_Eyexw6j3yOkaMbW4LIZEWS/exec" target="_blank">View your Google Sheet</a> — check here if any emails are missing.
+        <strong>Google Sheets backup:</strong> All results save automatically to your sheet. Check it anytime if emails are missing.
       </div>
     </div>
   </div>
@@ -231,21 +230,18 @@ function submitResults(){
 
   const resultText=`=== DiSC Assessment Result ===\nName: ${participantName}\nPrimary style: ${cm[pri].name} — ${cm[pri].en} (${pri}) — ${pct[pri]}%\nSecondary style: ${cm[sec].name} — ${cm[sec].en} (${sec}) — ${pct[sec]}%\n\nFull breakdown:\n  D – Dominant (Red / Execution):        ${pct.D}%\n  i – Influential (Yellow / Vision):     ${pct.i}%\n  S – Steady (Green / People):           ${pct.S}%\n  C – Conscientious (Blue / Structure):  ${pct.C}%`;
 
-  // 1. Send to Google Sheets (primary backup)
-  fetch(SHEETS_URL, {
-    method: "POST",
-    mode: "no-cors",
-    headers: {"Content-Type":"application/json"},
-    body: JSON.stringify({
-      name: participantName,
-      primary: cm[pri].name + " — " + cm[pri].en + " (" + pri + ") — " + pct[pri] + "%",
-      secondary: cm[sec].name + " — " + cm[sec].en + " (" + sec + ") — " + pct[sec] + "%",
-      D: pct.D,
-      i: pct.i,
-      S: pct.S,
-      C: pct.C
-    })
-  }).catch(()=>{});
+  // 1. Save to Google Sheets via doGet (image tag trick bypasses CORS completely)
+  const params = new URLSearchParams({
+    name: participantName,
+    primary: cm[pri].name + " — " + cm[pri].en + " (" + pri + ") — " + pct[pri] + "%",
+    secondary: cm[sec].name + " — " + cm[sec].en + " (" + sec + ") — " + pct[sec] + "%",
+    D: pct.D,
+    i: pct.i,
+    S: pct.S,
+    C: pct.C
+  });
+  const img = new Image();
+  img.src = SHEETS_URL + "?" + params.toString();
 
   // 2. Send via EmailJS
   if(emailConfig.service&&emailConfig.template&&emailConfig.pubkey){
