@@ -250,6 +250,7 @@ function renderQuestion(){
     const opt=q.opts[origIdx];
     const btn=document.createElement("button");
     btn.className="opt-btn"+(answers[current]===origIdx?" selected":"");
+    btn.dataset.origIdx=origIdx;
     btn.innerHTML=`<div>${opt.en}</div><div class="opt-jp">${opt.jp}</div>`;
     btn.onclick=()=>selectOption(origIdx);
     container.appendChild(btn);
@@ -263,7 +264,7 @@ function renderQuestion(){
 
 function selectOption(idx){
   answers[current]=idx;
-  document.querySelectorAll(".opt-btn").forEach((b,i)=>b.classList.toggle("selected",i===idx));
+  document.querySelectorAll(".opt-btn").forEach(b=>b.classList.toggle("selected",parseInt(b.dataset.origIdx)===idx));
   document.getElementById("next-btn").disabled=false;
 }
 
